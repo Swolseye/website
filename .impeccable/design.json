@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-11T14:21:50.3711471Z",
+  "title": "Design System: Swolseye",
+  "extensions": {
+    "shadows": [],
+    "typographyMeta": {
+      "body": {
+        "purpose": "General prose and reading pages.",
+        "displayName": "Body"
+      },
+      "display": {
+        "purpose": "Main introduction headline.",
+        "displayName": "Display"
+      }
+    },
+    "breakpoints": [
+      {
+        "value": "800px",
+        "name": "stacked"
+      },
+      {
+        "value": "420px",
+        "name": "narrow-phone"
+      }
+    ],
+    "colorMeta": {
+      "paper": {
+        "tonalRamp": [
+          "oklch(0.15 0.008 105)",
+          "oklch(0.264 0.008 105)",
+          "oklch(0.379 0.008 105)",
+          "oklch(0.493 0.008 105)",
+          "oklch(0.607 0.008 105)",
+          "oklch(0.721 0.008 105)",
+          "oklch(0.836 0.008 105)",
+          "oklch(0.95 0.008 105)"
+        ],
+        "role": "neutral",
+        "displayName": "Ivory Paper"
+      },
+      "ink": {
+        "tonalRamp": [
+          "oklch(0.15 0.019 167)",
+          "oklch(0.264 0.019 167)",
+          "oklch(0.379 0.019 167)",
+          "oklch(0.493 0.019 167)",
+          "oklch(0.607 0.019 167)",
+          "oklch(0.721 0.019 167)",
+          "oklch(0.836 0.019 167)",
+          "oklch(0.95 0.019 167)"
+        ],
+        "role": "neutral",
+        "displayName": "Deep Green Ink"
+      },
+      "muted": {
+        "tonalRamp": [
+          "oklch(0.15 0.021 160)",
+          "oklch(0.264 0.021 160)",
+          "oklch(0.379 0.021 160)",
+          "oklch(0.493 0.021 160)",
+          "oklch(0.607 0.021 160)",
+          "oklch(0.721 0.021 160)",
+          "oklch(0.836 0.021 160)",
+          "oklch(0.95 0.021 160)"
+        ],
+        "role": "neutral",
+        "displayName": "Muted Green"
+      },
+      "green": {
+        "tonalRamp": [
+          "oklch(0.15 0.065 157)",
+          "oklch(0.264 0.065 157)",
+          "oklch(0.379 0.065 157)",
+          "oklch(0.493 0.065 157)",
+          "oklch(0.607 0.065 157)",
+          "oklch(0.721 0.065 157)",
+          "oklch(0.836 0.065 157)",
+          "oklch(0.95 0.065 157)"
+        ],
+        "role": "primary",
+        "displayName": "Forest Green"
+      },
+      "line": {
+        "tonalRamp": [
+          "oklch(0.15 0.012 145)",
+          "oklch(0.264 0.012 145)",
+          "oklch(0.379 0.012 145)",
+          "oklch(0.493 0.012 145)",
+          "oklch(0.607 0.012 145)",
+          "oklch(0.721 0.012 145)",
+          "oklch(0.836 0.012 145)",
+          "oklch(0.95 0.012 145)"
+        ],
+        "role": "neutral",
+        "displayName": "Soft Divider"
+      },
+      "wash": {
+        "tonalRamp": [
+          "oklch(0.15 0.013 130)",
+          "oklch(0.264 0.013 130)",
+          "oklch(0.379 0.013 130)",
+          "oklch(0.493 0.013 130)",
+          "oklch(0.607 0.013 130)",
+          "oklch(0.721 0.013 130)",
+          "oklch(0.836 0.013 130)",
+          "oklch(0.95 0.013 130)"
+        ],
+        "role": "neutral",
+        "displayName": "Green Wash"
+      },
+      "accent": {
+        "tonalRamp": [
+          "oklch(0.15 0.069 125)",
+          "oklch(0.264 0.069 125)",
+          "oklch(0.379 0.069 125)",
+          "oklch(0.493 0.069 125)",
+          "oklch(0.607 0.069 125)",
+          "oklch(0.721 0.069 125)",
+          "oklch(0.836 0.069 125)",
+          "oklch(0.95 0.069 125)"
+        ],
+        "role": "primary",
+        "displayName": "Pale Lime"
+      },
+      "green-hover": {
+        "tonalRamp": [
+          "oklch(0.15 0.052 157)",
+          "oklch(0.264 0.052 157)",
+          "oklch(0.379 0.052 157)",
+          "oklch(0.493 0.052 157)",
+          "oklch(0.607 0.052 157)",
+          "oklch(0.721 0.052 157)",
+          "oklch(0.836 0.052 157)",
+          "oklch(0.95 0.052 157)"
+        ],
+        "role": "primary",
+        "displayName": "Deep Forest Green"
+      },
+      "score-line": {
+        "tonalRamp": [
+          "oklch(0.15 0.021 140)",
+          "oklch(0.264 0.021 140)",
+          "oklch(0.379 0.021 140)",
+          "oklch(0.493 0.021 140)",
+          "oklch(0.607 0.021 140)",
+          "oklch(0.721 0.021 140)",
+          "oklch(0.836 0.021 140)",
+          "oklch(0.95 0.021 140)"
+        ],
+        "role": "neutral",
+        "displayName": "Score Divider"
+      },
+      "button-ink": {
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.264 0 0)",
+          "oklch(0.379 0 0)",
+          "oklch(0.493 0 0)",
+          "oklch(0.607 0 0)",
+          "oklch(0.721 0 0)",
+          "oklch(0.836 0 0)",
+          "oklch(0.95 0 0)"
+        ],
+        "role": "neutral",
+        "displayName": "White"
+      }
+    },
+    "motion": [
+      {
+        "purpose": "Darken the primary action on hover; disabled for reduced motion.",
+        "value": "background .2s",
+        "name": "button-background"
+      },
+      {
+        "purpose": "Anchor navigation; becomes auto for reduced motion.",
+        "value": "smooth",
+        "name": "anchor-scroll"
+      }
+    ],
+    "colorSchemes": {
+      "selection": "prefers-color-scheme",
+      "default": "light",
+      "native": "light dark",
+      "dark": {
+        "paper": "#141c18",
+        "ink": "#edf3ed",
+        "muted": "#b5c3b8",
+        "green": "#a3d9b6",
+        "line": "#35483b",
+        "wash": "#202d24",
+        "accent": "#365440",
+        "green-hover": "#bce8c9",
+        "score-line": "#425847",
+        "button-ink": "#14271b"
+      }
+    }
+  },
+  "components": [
+    {
+      "kind": "button",
+      "name": "Primary action",
+      "description": "The green introductory action.",
+      "css": ".ds-button{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;display:inline-flex;align-items:center;gap:30px;background:var(--green,#245c44);color:var(--button-ink,#ffffff);padding:13px 22px;border-radius:8px;font-size:17px;line-height:1.65;font-weight:600;text-decoration:none;transition:background .2s}.ds-button:hover{background:var(--green-hover,#173e2d)}.ds-button:focus-visible{outline:3px solid var(--green,#245c44);outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}",
+      "refersTo": "button-primary",
+      "html": "<a class=\"ds-button\" href=\"#features\">Meet Swolseye <span aria-hidden=\"true\">↓</span></a>"
+    },
+    {
+      "kind": "custom",
+      "name": "Text link",
+      "description": "A direct help link with decorative arrow.",
+      "css": ".ds-link{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;color:var(--green,#245c44);font-size:17px;line-height:1.65;font-weight:600;white-space:nowrap;text-underline-offset:.22em}.ds-link span{margin-left:18px}.ds-link:hover{text-decoration-thickness:2px}.ds-link:focus-visible{outline:3px solid var(--green,#245c44);outline-offset:5px;}",
+      "refersTo": "text-link",
+      "html": "<a class=\"ds-link\" href=\"#support\">Get help <span aria-hidden=\"true\">→</span></a>"
+    },
+    {
+      "kind": "nav",
+      "name": "Navigation",
+      "description": "Plain, wrapping navigation with current-page indication.",
+      "css": ".ds-nav{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;display:flex;gap:28px;flex-wrap:wrap}.ds-nav a{color:var(--muted,#53615b);font-size:15px;line-height:1.65;text-decoration:none;padding-block:8px}.ds-nav a:hover,.ds-nav a[aria-current]{color:var(--green,#245c44);text-decoration:underline}.ds-nav a:focus-visible{outline:3px solid var(--green,#245c44);outline-offset:5px;}@media(max-width:420px){.ds-nav{gap:25px}}",
+      "refersTo": "navigation",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Example navigation\"><a href=\"#support\" aria-current=\"page\">Support</a><a href=\"#privacy\">Privacy</a></nav>"
+    },
+    {
+      "kind": "custom",
+      "name": "FAQ disclosure",
+      "description": "A native keyboard-accessible disclosure.",
+      "css": ".ds-faq{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;color:var(--ink,#202b28);border-bottom:1px solid var(--line,#d8dfd8);padding-block:20px}.ds-faq summary{cursor:pointer;font-size:19px;font-weight:600;line-height:1.5;padding-right:12px}.ds-faq summary:focus-visible{outline:3px solid var(--green,#245c44);outline-offset:5px;}.ds-faq p{font-size:17px;line-height:1.65;color:var(--muted,#53615b);margin-bottom:0}",
+      "refersTo": "faq-disclosure",
+      "html": "<details class=\"ds-faq\"><summary>Can I undo a score?</summary><p>Undo an input or go back across turns.</p></details>"
+    },
+    {
+      "kind": "card",
+      "name": "Scorekeeping illustration",
+      "description": "A labeled static example match, not an app screenshot.",
+      "css": ".ds-figure{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;margin:0;color:var(--ink,#202b28);line-height:1.65}.ds-sheet{background:var(--wash,#eef2ec);padding:32px;border-radius:16px}.ds-heading{display:flex;justify-content:space-between;align-items:center;padding-bottom:30px}.ds-heading strong{font-size:25px}.ds-heading span,.ds-players span,.ds-checkout>span,.ds-bottom,.ds-figure figcaption{font-size:13px;color:var(--muted,#53615b)}.ds-players{display:grid;grid-template-columns:1fr 1fr;gap:18px;border-block:1px solid #cad4c8;padding-block:26px}.ds-players>div{display:flex;flex-direction:column}.ds-players strong{font-size:66px;line-height:1.2;font-weight:500;letter-spacing:-.04em;font-variant-numeric:tabular-nums}.ds-players .ds-active,.ds-players .ds-active span{color:var(--green,#245c44)}.ds-active span{font-weight:600}.ds-checkout{display:flex;flex-direction:column;gap:8px;padding-block:28px}.ds-checkout strong{font-size:25px;font-weight:550;font-variant-numeric:tabular-nums}.ds-bottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #cad4c8;padding-top:24px}.ds-bull{width:10px;height:10px;border:6px solid var(--green,#245c44);border-radius:50%;background:var(--accent,#dcebb7)}.ds-figure figcaption{text-align:center;margin-top:15px}@media(max-width:800px){.ds-sheet{padding:25px}}@media(max-width:420px){.ds-players strong{font-size:58px}.ds-players span{font-size:12px}.ds-checkout strong{font-size:23px}}",
+      "refersTo": "score-sheet",
+      "html": "<figure class=\"ds-figure\"><div class=\"ds-sheet\" role=\"img\" aria-label=\"Illustrative match: Player 1 has 101 remaining, Player 2 has 160. Checkout: triple 17, single 18, double 16.\"><div class=\"ds-heading\"><strong>501</strong><span>Two-player darts</span></div><div class=\"ds-players\"><div class=\"ds-active\"><span>Player 1 · Your turn</span><strong>101</strong></div><div><span>Player 2</span><strong>160</strong></div></div><div class=\"ds-checkout\"><span>A way to finish</span><strong>T17 → S18 → D16</strong></div><div class=\"ds-bottom\"><span>Every point accounted for.</span><span class=\"ds-bull\" aria-hidden=\"true\"></span></div></div><figcaption>Scorekeeping illustration · example match</figcaption></figure>"
+    }
+  ],
+  "narrative": {
+    "rules": [],
+    "overview": "Swolseye uses the user-approved green and ivory direction, familiar system typography and ample space. The existing app icon carries the identity; the website explains the app with concise text and a clearly labeled scorekeeping illustration.\n\nThe visual system is quiet and practical. Flat surfaces, fine dividers and restrained curves support both the app introduction and longer help pages.",
+    "northStar": "Simple, spacious and system-adaptive",
+    "dos": [
+      "Do preserve the simple, spacious and system-adaptive direction.",
+      "Do reuse the existing app icon and system font stack.",
+      "Do label score illustrations and provide equivalent accessible descriptions.",
+      "Do retain visible keyboard focus and reduced-motion behavior.",
+      "Do keep support pages readable with constrained text widths."
+    ],
+    "donts": [
+      "Don't present the illustrative score sheet as an actual app screenshot.",
+      "Don't replace the existing visual identity without a new user decision.",
+      "Don't add unsupported component variants to this extracted system."
+    ],
+    "keyCharacteristics": [
+      "Light ivory canvas and deep green actions.",
+      "Native system typography with generous reading space.",
+      "Flat surfaces with fine separators.",
+      "Existing app icon and explicitly labeled illustrations."
+    ]
+  }
+}
+

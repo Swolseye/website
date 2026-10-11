@@ -1,0 +1,7 @@
+.git
+.impeccable
+.bundle
+.jekyll-cache
+.jekyll-metadata
+_site
+vendor

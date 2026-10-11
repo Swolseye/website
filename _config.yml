@@ -1,0 +1,21 @@
+title: Swolseye
+description: A simple two-player 501 darts scorekeeper for iPhone.
+url: https://swolseye.github.io
+baseurl: /website
+lang: en
+support_email: swolseye@outlook.com
+app_store_url: ""
+markdown: kramdown
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - PRODUCT.md
+  - DESIGN.md
+  - tools
+  - vendor
+  - .impeccable
+  - Dockerfile
+  - compose.yml
+
