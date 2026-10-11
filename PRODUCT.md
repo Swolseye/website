@@ -28,7 +28,7 @@ Swolseye. Keep the site simple and reuse the existing app icon.
 
 ## Evidence on Hand
 
-Read-only sources: ../application/README.md and ../application/Swolseye/Resources/PrivacyInfo.xcprivacy. Existing app icon in the application asset catalog. User-supplied framed screenshots are available in assets/images/screenshots, from swolseye-screenshots-2.zip. Use the scoring and number-grid views with theme-matched variants.
+Read-only sources: ../application/README.md and ../application/Swolseye/Resources/PrivacyInfo.xcprivacy. Existing app icon in the application asset catalog. User-supplied framed screenshots are available in assets/images/screenshots, from swolseye-screenshots-2.zip. Use only the scoring view with theme-matched variants. The user requested removal of the number-grid screenshot and a full-width text feature section.
 
 ## Open Decisions
 

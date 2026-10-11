@@ -20,8 +20,12 @@
         "name": "stacked"
       },
       {
-        "value": "420px",
-        "name": "narrow-phone"
+        "value": "600px",
+        "name": "single-column-features"
+      },
+      {
+        "value": "480px",
+        "name": "narrow-header"
       }
     ],
     "colorMeta": {
@@ -196,12 +200,36 @@
       }
     },
     "screenshots": {
-      "secondaryWidth": "260px",
       "height": 3000,
       "width": 1470,
       "source": "User-provided swolseye-screenshots-2.zip, framed directory",
       "heroWidth": "300px",
       "themeSelection": "prefers-color-scheme"
+    },
+    "layout": {
+      "shell": "1120px",
+      "gutters": [
+        "40px",
+        "24px",
+        "20px"
+      ],
+      "featureStackAt": "600px",
+      "sectionSpacing": [
+        "64px",
+        "48px"
+      ],
+      "featureColumns": 2,
+      "headerStackAt": "480px",
+      "featureAlignment": "subgrid",
+      "reading": "760px",
+      "screenshotPanel": {
+        "radius": "16px",
+        "padding": "32px",
+        "width": "100%",
+        "mobilePadding": "24px",
+        "background": "var(--wash)",
+        "imageAlignment": "center"
+      }
     }
   },
   "components": [
@@ -240,7 +268,7 @@
   ],
   "narrative": {
     "rules": [],
-    "overview": "Swolseye uses system-adaptive green themes, native typography and real framed screenshots. The feature heading spans a compact screenshot and two-column feature layout.",
+    "overview": "System-adaptive green themes, a framed scoring screenshot and a full-width two-column feature list. Shared shell edges, normalized margins, aligned text rows and consistent focus outlines apply site-wide.",
     "northStar": "Simple, spacious and system-adaptive",
     "dos": [
       "Do preserve the simple, spacious and system-adaptive direction.",

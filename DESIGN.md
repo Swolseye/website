@@ -10,7 +10,6 @@ colors:
   wash: "#eef2ec"
   accent: "#dcebb7"
   green-hover: "#173e2d"
-  score-line: "#cad4c8"
   button-ink: "#ffffff"
 typography:
   display:
@@ -63,7 +62,7 @@ components:
     backgroundColor: "{colors.green}"
     textColor: "{colors.button-ink}"
     rounded: "{rounded.button}"
-    padding: "13px 22px"
+    padding: "12px 24px"
   button-primary-hover:
     backgroundColor: "{colors.green-hover}"
   app-screenshot:
@@ -128,7 +127,7 @@ The palette combines a warm paper background with restrained greens. The frontma
 - **Muted:** descriptive text, labels and navigation at rest.
 - **Line:** structural dividers.
 - **Wash:** a reserved secondary surface color.
-- **Score line:** retained legacy token; unused by the current screenshot layout.
+
 - **White:** text on the green primary action.
 
 ## Typography
@@ -141,11 +140,15 @@ Reading pages use a smaller main heading (`clamp(38px, 5vw, 55px)`) and section 
 
 ## Layout
 
-The shared container is capped at 1120px with 40px side margins (20px at widths up to 800px). The hero uses 1.05fr / 1fr columns, a 64px gap and 48px / 60px vertical padding. Its framed screenshot is capped at 300px wide, 280px on mobile.
+Use a centered 1120px shell. Header, homepage sections and footer share identical edges. Reading pages intentionally use a narrower centered 760px measure. Horizontal gutters are 40px above 800px, 24px up to 800px, and 20px up to 480px.
 
-The feature heading spans the section. Below it, a 300px screenshot column sits beside a compact two-column feature list with 36px / 32px gaps. The number-grid screenshot is capped at 260px. Between 801px and 1000px the image column reduces to 240px, the screenshot to 230px and the gap to 32px. At 800px and below the layout stacks with text first; at 540px the feature list becomes one column.
+Section spacing is 64px on desktop and 48px on smaller screens. The hero uses equal columns with a 64px gap, 48px top padding and a 300px framed scoring screenshot (280px on mobile). The screenshot sits centered in a full-width right-column panel using the wash surface, 16px corners and 32px padding (24px on mobile). The panel aligns with the shared right page edge. Its icon is block-level with a 24px bottom gap. Intro margins are 24px / 32px; button padding is 12px / 24px and the quiet line is 16px below.
 
-Reading pages retain their 760px maximum width. Header and help/footer layouts retain the existing responsive behavior.
+The full-width feature heading sits above four text features in two equal columns, separated by a 48px gutter (32px at widths up to 800px). Subgrid aligns paired headings and descriptions even when headings wrap. Features stack at 600px. No number-grid screenshot or empty image column remains.
+
+Header branding and navigation use 44px minimum-height links. The footer uses an explicit grid with centered row alignment, stacking at 800px. Header stacks at 480px. The help strip has a shared top border and 40px vertical padding (32px when stacked).
+
+Reading pages use 24px below the title, 40px / 16px around section headings, and 20px between paragraphs. Lists have 24px indentation and 8px item gaps. FAQ disclosure markers occupy a fixed 24px gutter; wrapped questions and answers align on the text edge. All focus outlines use 3px green with a 5px offset.
 ## Elevation & Depth
 
 The current system has no shadows. Depth comes from the wash surface, paper canvas and fine borders. App screenshots supply their own device framing; feature content remains open on the page.
@@ -170,7 +173,7 @@ A plain horizontal link group with a 28px gap. Muted links become green and unde
 
 ### Framed app screenshots
 
-Use the supplied transparent PNGs at their natural aspect ratio (1470 × 3000). Device frames are already included: do not add another frame or crop the image. Use picture/source with prefers-color-scheme for dark variants and a light fallback. The hero image has high fetch priority; the secondary image loads lazily. Provide meaningful alt text and concise captions.
+Use the supplied transparent PNGs at their natural aspect ratio (1470 × 3000). Device frames are already included: do not add another frame or crop the image. Use picture/source with prefers-color-scheme for dark variants and a light fallback. Only the scoring screenshot remains, with high fetch priority. Provide meaningful alt text and concise captions.
 ### FAQ disclosures
 
 Use browser-native `details` and `summary`. Semibold summaries, a pointer cursor, 20px vertical spacing and bottom dividers establish the rhythm. Retain native keyboard behavior and the shared focus outline.
