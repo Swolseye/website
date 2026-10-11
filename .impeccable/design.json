@@ -222,13 +222,14 @@
       "headerStackAt": "480px",
       "featureAlignment": "subgrid",
       "reading": "760px",
-      "screenshotPanel": {
-        "radius": "16px",
-        "padding": "32px",
-        "width": "100%",
-        "mobilePadding": "24px",
-        "background": "var(--wash)",
-        "imageAlignment": "center"
+      "screenshotPair": {
+        "columns": 2,
+        "gap": "24px",
+        "mobileAppearance": "system",
+        "singleScreenshotAt": "540px",
+        "background": "transparent",
+        "maxWidth": "560px",
+        "mobileWidth": "280px"
       }
     }
   },

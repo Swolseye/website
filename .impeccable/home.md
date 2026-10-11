@@ -8,4 +8,4 @@ The feature section is a full-width two-column text grid with row-aligned headin
 
 Verification: 120 page/theme/viewport combinations across all six routes, light/dark, and ten widths from 320 to 1440px. Checked overflow, image loading, shared shell edges, centered content, feature-row alignment, appearance changes and text contrast. Static template previews only; actual Jekyll compilation remains a CI check.
 
-The hero screenshot is centered inside a distinct full-width right-column panel, using the theme-aware wash background, 16px corners and 32px padding (24px on mobile).
+The hero shows light and dark framed scoring screenshots side by side with no panel background. On screens up to 540px only the system-matching screenshot is displayed for readability.

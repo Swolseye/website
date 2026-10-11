@@ -47,11 +47,9 @@ h3 { font-size: 23px; font-weight: 600; }
 .button:hover { background: var(--green-hover); }
 .quiet, figcaption { font-size: 13px; color: var(--muted); }
 .quiet { margin-top: 16px; }
+.hero-screenshots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 24px; width: 100%; max-width: 560px; justify-self: end; }
 .app-preview { min-width: 0; text-align: center; }
-.app-preview picture { display: block; }
 .app-preview img { width: 100%; height: auto; }
-.hero-preview { width: 100%; padding: 32px; border-radius: 16px; background: var(--wash); }
-.hero-preview picture { width: min(100%, 300px); margin-inline: auto; }
 figcaption { margin-top: 16px; }
 .features { padding-block: var(--section-space); border-top: 1px solid var(--line); scroll-margin-top: 32px; }
 .features > h2 { margin-bottom: 40px; }
@@ -89,8 +87,7 @@ figcaption { margin-top: 16px; }
   :root { --gutter: 24px; --section-space: 48px; }
   .hero { grid-template-columns: 1fr; gap: 40px; }
   .hero-copy { max-width: 520px; }
-  .hero-preview { padding: 24px; }
-  .hero-preview picture { width: min(100%, 280px); }
+  .hero-screenshots { justify-self: center; }
   .feature-list { column-gap: 32px; }
   .features > h2 { margin-bottom: 32px; }
   .help-strip { align-items: flex-start; flex-direction: column; gap: 16px; padding-block: 32px; }
@@ -126,4 +123,14 @@ figcaption { margin-top: 16px; }
     --green-hover: #bce8c9;
     --button-ink: #14271b;
   }
+}
+
+/* Keep the phone screen readable on narrow devices; follow system appearance. */
+@media (max-width: 540px) {
+  .hero-screenshots { grid-template-columns: 1fr; max-width: 280px; }
+  .preview-dark { display: none; }
+}
+@media (max-width: 540px) and (prefers-color-scheme: dark) {
+  .preview-light { display: none; }
+  .preview-dark { display: block; }
 }

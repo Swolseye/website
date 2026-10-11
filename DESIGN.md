@@ -142,7 +142,7 @@ Reading pages use a smaller main heading (`clamp(38px, 5vw, 55px)`) and section 
 
 Use a centered 1120px shell. Header, homepage sections and footer share identical edges. Reading pages intentionally use a narrower centered 760px measure. Horizontal gutters are 40px above 800px, 24px up to 800px, and 20px up to 480px.
 
-Section spacing is 64px on desktop and 48px on smaller screens. The hero uses equal columns with a 64px gap, 48px top padding and a 300px framed scoring screenshot (280px on mobile). The screenshot sits centered in a full-width right-column panel using the wash surface, 16px corners and 32px padding (24px on mobile). The panel aligns with the shared right page edge. Its icon is block-level with a 24px bottom gap. Intro margins are 24px / 32px; button padding is 12px / 24px and the quiet line is 16px below.
+Section spacing is 64px on desktop and 48px on smaller screens. The hero uses equal columns with a 64px gap, 48px top padding and paired framed scoring screenshots (one 280px screenshot on mobile). The right column shows light and dark scoring screenshots side by side in an unframed, transparent two-column group with a 24px gap and 560px maximum width. At 540px and below, show only the system-matching screenshot at a maximum width of 280px. Its icon is block-level with a 24px bottom gap. Intro margins are 24px / 32px; button padding is 12px / 24px and the quiet line is 16px below.
 
 The full-width feature heading sits above four text features in two equal columns, separated by a 48px gutter (32px at widths up to 800px). Subgrid aligns paired headings and descriptions even when headings wrap. Features stack at 600px. No number-grid screenshot or empty image column remains.
 
@@ -173,7 +173,7 @@ A plain horizontal link group with a 28px gap. Muted links become green and unde
 
 ### Framed app screenshots
 
-Use the supplied transparent PNGs at their natural aspect ratio (1470 × 3000). Device frames are already included: do not add another frame or crop the image. Use picture/source with prefers-color-scheme for dark variants and a light fallback. Only the scoring screenshot remains, with high fetch priority. Provide meaningful alt text and concise captions.
+Use the supplied transparent PNGs at their natural aspect ratio (1470 × 3000). Device frames are already included: do not add another frame or crop the image. Both light and dark figures are visible on desktop. At widths up to 540px CSS selects only the system-matching figure. Only the scoring screenshot remains, with high fetch priority. Provide meaningful alt text and concise captions.
 ### FAQ disclosures
 
 Use browser-native `details` and `summary`. Semibold summaries, a pointer cursor, 20px vertical spacing and bottom dividers establish the rhythm. Retain native keyboard behavior and the shared focus outline.

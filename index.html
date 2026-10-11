@@ -10,13 +10,16 @@ home: true
     <a class="button" href="{{ site.app_store_url | default: '#' | escape }}">Download on the App Store</a>
     <p class="quiet">No account. No app tracking. Just the game.</p>
   </div>
-  <figure class="app-preview hero-preview">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="{{ '/assets/images/screenshots/en-dark-scoring.png' | relative_url }}">
-      <img src="{{ '/assets/images/screenshots/en-light-scoring.png' | relative_url }}" width="1470" height="3000" fetchpriority="high" alt="Swolseye on iPhone: two player scores, the current turn, a dartboard for entering points, Undo and End Turn.">
-    </picture>
-    <figcaption>Your match, at a glance.</figcaption>
-  </figure>
+  <div class="hero-screenshots" aria-label="Swolseye in light and dark appearance">
+    <figure class="app-preview preview-light">
+      <img src="{{ '/assets/images/screenshots/en-light-scoring.png' | relative_url }}" width="1470" height="3000" fetchpriority="high" alt="Swolseye in light mode: player scores, dartboard input, Undo and End Turn.">
+      <figcaption>Light appearance</figcaption>
+    </figure>
+    <figure class="app-preview preview-dark">
+      <img src="{{ '/assets/images/screenshots/en-dark-scoring.png' | relative_url }}" width="1470" height="3000" alt="Swolseye in dark mode: player scores, dartboard input, Undo and End Turn.">
+      <figcaption>Dark appearance</figcaption>
+    </figure>
+  </div>
 </section>
 <section id="features" class="features">
   <h2>Keep your mind on the next throw.</h2>
