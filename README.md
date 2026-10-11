@@ -55,10 +55,10 @@ Once deployed, use these URLs in App Store Connect:
 
 Contact and FAQ are linked from the site. Apple also requires an accessible privacy-policy link inside the app; adding that is outside this repository's scope and has not been done here.
 
-The App Store download URL remains empty in `_config.yml`. Set `app_store_url` when a real listing exists; the homepage will then show its App Store link. No release status or minimum iOS claim is published.
+The prominent App Store button uses `app_store_url` in `_config.yml`, currently `"#"` as requested. Replace it with the real App Store listing URL when available.
 
 Before submission, verify the live pages and email link and have the publisher confirm the privacy policy reflects the released app and support handling, including any applicable retention or legal disclosure requirements. This website cannot establish App Review approval.
 
 ## Content and assets
 
-Edit the homepage in `index.html`, help pages at the root, and shared layout/style in `_layouts/default.html` and `assets/style.css`. The icon is copied from the existing app asset. The homepage score panel is an explicitly labeled illustration, not an app screenshot. No JS or external font requests are needed.
+Edit the homepage in `index.html`, help pages at the root, and shared layout/style in `_layouts/default.html` and `assets/style.css`. The icon is copied from the existing app asset. The homepage uses the supplied framed screenshots from `swolseye-screenshots-2.zip`. Light and dark variants follow the browser appearance via picture sources. No JS or external font requests are needed.

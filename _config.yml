@@ -4,7 +4,7 @@ url: https://swolseye.github.io
 baseurl: /website
 lang: en
 support_email: swolseye@outlook.com
-app_store_url: ""
+app_store_url: "#"
 markdown: kramdown
 permalink: pretty
 exclude:
@@ -18,4 +18,3 @@ exclude:
   - .impeccable
   - Dockerfile
   - compose.yml
-

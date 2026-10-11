@@ -28,11 +28,11 @@ Swolseye. Keep the site simple and reuse the existing app icon.
 
 ## Evidence on Hand
 
-Read-only sources: ../application/README.md and ../application/Swolseye/Resources/PrivacyInfo.xcprivacy. Existing app icon in the application asset catalog. No actual app screenshots supplied; label interface illustrations.
+Read-only sources: ../application/README.md and ../application/Swolseye/Resources/PrivacyInfo.xcprivacy. Existing app icon in the application asset catalog. User-supplied framed screenshots are available in assets/images/screenshots, from swolseye-screenshots-2.zip. Use the scoring and number-grid views with theme-matched variants.
 
 ## Open Decisions
 
-Support contact confirmed: swolseye@outlook.com. App Store URL and custom domain remain unset. The user approved a simple light layout, existing icon and labeled score illustration.
+Support contact confirmed: swolseye@outlook.com. The actual App Store URL and custom domain remain unset. The user requested a prominent App Store button with a # placeholder, real framed screenshots in place of the illustration, and a compact feature section. Preserve automatic system appearance.
 
 ## Product Principles
 

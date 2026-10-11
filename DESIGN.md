@@ -49,7 +49,6 @@ typography:
 rounded:
   button: "8px"
   brand-icon: "9px"
-  score-sheet: "16px"
   app-icon: "19px"
   bull: "50%"
 spacing:
@@ -67,11 +66,8 @@ components:
     padding: "13px 22px"
   button-primary-hover:
     backgroundColor: "{colors.green-hover}"
-  score-sheet:
-    backgroundColor: "{colors.wash}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.score-sheet}"
-    padding: "32px"
+  app-screenshot:
+    width: "300px"
   text-link:
     textColor: "{colors.green}"
   navigation:
@@ -87,7 +83,7 @@ components:
 
 **Creative North Star: "Simple, spacious and system-adaptive"**
 
-Swolseye uses the user-approved green and ivory direction, familiar system typography and ample space. The existing app icon carries the identity; the website explains the app with concise text and a clearly labeled scorekeeping illustration.
+Swolseye uses the user-approved green and ivory direction, familiar system typography and ample space. The existing app icon carries the identity; the website explains the app with concise text and real framed app screenshots.
 
 The visual system is quiet and practical. Flat surfaces, fine dividers and restrained curves support both the app introduction and longer help pages.
 
@@ -96,7 +92,7 @@ The visual system is quiet and practical. Flat surfaces, fine dividers and restr
 - Light ivory canvas and deep green actions.
 - Native system typography with generous reading space.
 - Flat surfaces with fine separators.
-- Existing app icon and explicitly labeled illustrations.
+- Existing app icon and real, theme-matched framed screenshots.
 
 ## Colors
 
@@ -131,8 +127,8 @@ The palette combines a warm paper background with restrained greens. The frontma
 - **Ink:** headings, branding and main text.
 - **Muted:** descriptive text, labels and navigation at rest.
 - **Line:** structural dividers.
-- **Wash:** the score illustration's tinted surface.
-- **Score line:** separators inside the tinted illustration.
+- **Wash:** a reserved secondary surface color.
+- **Score line:** retained legacy token; unused by the current screenshot layout.
 - **White:** text on the green primary action.
 
 ## Typography
@@ -145,15 +141,14 @@ Reading pages use a smaller main heading (`clamp(38px, 5vw, 55px)`) and section 
 
 ## Layout
 
-The shared container is centered and capped at 1120px, with 40px space on each side. The desktop hero uses a 1.05fr / 1fr grid with a 64px gap and 88px / 100px vertical padding. The feature section uses a 1fr / 1.05fr grid with a 90px gap. These are observed homepage compositions, not mandatory layouts for every page.
+The shared container is capped at 1120px with 40px side margins (20px at widths up to 800px). The hero uses 1.05fr / 1fr columns, a 64px gap and 48px / 60px vertical padding. Its framed screenshot is capped at 300px wide, 280px on mobile.
 
-At 800px and below, the container has 20px side margins, hero and features become single columns, and the help strip stacks. Hero spacing reduces to a 35px gap and 55px / 60px vertical padding. The illustration is capped at 480px and its padding reduces to 25px. Reading pages use a 760px maximum width with 65px / 80px vertical padding; top padding reduces to 45px at this breakpoint.
+The feature heading spans the section. Below it, a 300px screenshot column sits beside a compact two-column feature list with 36px / 32px gaps. The number-grid screenshot is capped at 260px. Between 801px and 1000px the image column reduces to 240px, the screenshot to 230px and the gap to 32px. At 800px and below the layout stacks with text first; at 540px the feature list becomes one column.
 
-At 420px and below, branding and navigation stack, header padding reduces to 20px and hero top padding to 38px. Navigation and footer can wrap. Keep literal whitespace around line breaks that disappear on mobile so words remain separated.
-
+Reading pages retain their 760px maximum width. Header and help/footer layouts retain the existing responsive behavior.
 ## Elevation & Depth
 
-The current system has no shadows. Depth comes from the wash surface, paper canvas and fine borders. The score illustration is a single distinct surface; feature content remains open on the page.
+The current system has no shadows. Depth comes from the wash surface, paper canvas and fine borders. App screenshots supply their own device framing; feature content remains open on the page.
 
 ## Shapes
 
@@ -173,10 +168,9 @@ Green, underlined links use an underline offset of 0.22em and a thicker underlin
 
 A plain horizontal link group with a 28px gap. Muted links become green and underlined on hover or when carrying `aria-current`. Links have 8px vertical padding. Narrow phone spacing is 25px.
 
-### Scorekeeping illustration
+### Framed app screenshots
 
-A tinted, rounded figure with two score columns, an active player in green, a checkout route and a small bull motif. The score columns are separated from surrounding content by fine lines. Preserve its descriptive accessible label and visible example-match caption; it is an illustration, not an app screenshot or interactive scorekeeper.
-
+Use the supplied transparent PNGs at their natural aspect ratio (1470 × 3000). Device frames are already included: do not add another frame or crop the image. Use picture/source with prefers-color-scheme for dark variants and a light fallback. The hero image has high fetch priority; the secondary image loads lazily. Provide meaningful alt text and concise captions.
 ### FAQ disclosures
 
 Use browser-native `details` and `summary`. Semibold summaries, a pointer cursor, 20px vertical spacing and bottom dividers establish the rhythm. Retain native keyboard behavior and the shared focus outline.
@@ -191,15 +185,12 @@ The header and footer have fine dividers; the brand is an icon plus bold name. A
 
 - Do preserve the simple, spacious and system-adaptive direction.
 - Do reuse the existing app icon and system font stack.
-- Do label score illustrations and provide equivalent accessible descriptions.
+- Do use real screenshots with descriptive alt text and matching light/dark variants.
 - Do retain visible keyboard focus and reduced-motion behavior.
 - Do keep support pages readable with constrained text widths.
 
 ### Don't:
 
-- Don't present the illustrative score sheet as an actual app screenshot.
+- Don't recreate or crop the supplied screenshots.
 - Don't replace the existing visual identity without a new user decision.
 - Don't add unsupported component variants to this extracted system.
-
-
-

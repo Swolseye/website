@@ -81,7 +81,7 @@ nav a:hover,nav a[aria-current] {
   grid-template-columns:1.05fr 1fr;
   align-items:center;
   gap:64px;
-  padding-block:88px 100px}
+  padding-block:48px 60px}
 .app-icon {
   border-radius:19px;
   margin-bottom:20px}
@@ -125,89 +125,60 @@ h3 {
   color:var(--muted)}
 .quiet {
   margin-top:18px}
-.score-figure {
-  margin:0}
-.score-sheet {
-  background:var(--wash);
-  padding:32px;
-  border-radius:16px}
-.score-heading {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding-bottom:30px}
-.score-heading strong {
-  font-size:25px}
-.score-heading span,.players span,.checkout>span,.score-bottom {
-  font-size:13px;
-  color:var(--muted)}
-.players {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:18px;
-  border-block:1px solid var(--score-line);
-  padding-block:26px}
-.players>div {
-  display:flex;
-  flex-direction:column}
-.players strong {
-  font-size:66px;
-  line-height:1.2;
-  font-weight:500;
-  letter-spacing:-.04em;
-  font-variant-numeric:tabular-nums}
-.players .active {
-  color:var(--green)}
-.players .active span {
-  color:var(--green);
-  font-weight:600}
-.checkout {
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-  padding-block:28px}
-.checkout strong {
-  font-size:25px;
-  font-weight:550;
-  font-variant-numeric:tabular-nums}
-.checkout i {
-  font-style:normal;
-  font-size:18px;
-  color:var(--muted);
-  margin-inline:5px}
-.score-bottom {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border-top:1px solid var(--score-line);
-  padding-top:24px}
-.bull {
-  width:22px;
-  height:22px;
-  border:6px solid var(--green);
-  border-radius:50%;
-  background:var(--accent)}
+.app-preview {
+  margin:0;
+  min-width:0;
+  text-align:center;
+}
+.app-preview picture {
+  display:block;
+}
+.app-preview img {
+  display:block;
+  width:100%;
+  height:auto;
+  margin-inline:auto;
+}
+.hero-preview {
+  width:min(100%,300px);
+  justify-self:center;
+}
+.grid-preview {
+  width:min(100%,260px);
+  justify-self:center;
+}
 figcaption {
   text-align:center;
-  margin-top:15px}
+  margin-top:16px;
+}
 .features {
-  display:grid;
-  grid-template-columns:1fr 1.05fr;
-  gap:90px;
-  padding-block:68px 50px;
+  padding-block:52px 56px;
   border-top:1px solid var(--line);
-  scroll-margin-top:30px}
+  scroll-margin-top:30px;
+}
+.features>h2 {
+  margin-bottom:40px;
+}
+.feature-body {
+  display:grid;
+  grid-template-columns:300px 1fr;
+  align-items:center;
+  gap:64px;
+}
+.feature-list {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:36px 32px;
+}
 .feature-list article {
-  padding-bottom:32px;
-  margin-bottom:30px;
-  border-bottom:1px solid var(--line)}
-.feature-list article:last-child {
-  border:0;
-  margin-bottom:0}
+  border-top:1px solid var(--line);
+  padding-top:20px;
+}
 .feature-list p {
   color:var(--muted);
   margin:0;
-  max-width:55ch}
+  max-width:55ch;
+}
 .help-strip {
   display:flex;
   justify-content:space-between;
@@ -279,18 +250,15 @@ figcaption {
 .hero {
   gap:35px;
   padding-block:55px 60px}
-.hero,.features {
+.hero,.feature-body {
   grid-template-columns:1fr}
 .hero-copy {
   max-width:520px}
-.score-figure {
-  max-width:480px;
-  width:100%}
+
 .features {
   gap:30px;
   padding-top:45px}
-.features h2 br {
-  display:none}
+
 .help-strip {
   align-items:flex-start;
   flex-direction:column}
@@ -298,8 +266,7 @@ figcaption {
   display:block}
 .reading {
   padding-top:45px}
-.score-sheet {
-  padding:25px}
+
 }
 @media(max-width:420px) {
   .site-header {
@@ -311,12 +278,9 @@ nav {
   gap:25px}
 .hero {
   padding-top:38px}
-.players strong {
-  font-size:58px}
-.players span {
-  font-size:12px}
-.checkout strong {
-  font-size:23px}
+
+
+
 }
 @media(prefers-reduced-motion:reduce) {
   :root {
@@ -338,4 +302,20 @@ nav {
     --score-line:#425847;
     --button-ink:#14271b;
   }
+}
+
+@media (max-width:1000px) and (min-width:801px) {
+  .feature-body { grid-template-columns:240px 1fr; gap:32px; }
+  .grid-preview { width:230px; }
+  .feature-list { gap:28px 24px; }
+}
+@media (max-width:800px) {
+  .hero-preview { width:min(100%,280px); }
+  .feature-body { gap:36px; }
+  .feature-list { grid-row:1; }
+  .grid-preview { width:min(100%,260px); }
+}
+@media (max-width:540px) {
+  .feature-list { grid-template-columns:1fr; gap:24px; }
+  .features>h2 { margin-bottom:28px; }
 }

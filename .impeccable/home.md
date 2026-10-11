@@ -1,11 +1,11 @@
 # Homepage direction
 
-Mode: Persuade. Help pages: Read.
+Mode: Persuade. Help pages: Read. Code-first.
 
-User-approved: very simple, light, spacious, existing app icon, labeled scorekeeping illustration, concise features and readily available support. Code-first.
+User-approved revision: replace the score illustration with supplied framed app screenshots, reduce empty feature-section space, and add a prominent App Store button pointing to # until the real URL is supplied.
 
-First viewport: app identity and 'Your darts. Less maths.' with a true explanation of two-player 501, a labeled example score sheet and an anchor to features. No false App Store availability claim.
+First viewport: existing headline and truthful two-player 501 description, App Store button, and the framed scoring screen. The feature heading spans a number-grid screenshot and a compact two-column feature list. Layout stacks on mobile.
 
-Interaction: browser-native FAQ disclosures. Anchor scrolling respects reduced motion. No decorative animation or JavaScript.
+Both screenshots follow browser light/dark appearance via picture sources. Preserve natural image proportions, included frames and accessible descriptions. No image alterations or application-folder changes.
 
-Evidence: existing iOS README and privacy manifest were inspected read-only. Preview captures are static template renders; Jekyll must be built in CI.
+Verification: all six pages checked at 1440, 900 and 390 pixels in light and dark using a static template preview, not an actual Jekyll build. Theme source selection, placeholder link, overflow and image loading passed.
