@@ -11,6 +11,12 @@ Questions, bugs, feedback or privacy requests: email the developer of Swolseye.
 
 [{{ site.support_email }}](mailto:{{ site.support_email }})
 
+## Prefer GitHub?
+
+[Create a support issue](https://github.com/swolseye/website/issues/new?template=support.md) for questions, bug reports or feedback about the app or website. You can [browse existing issues](https://github.com/swolseye/website/issues) first. Posting requires a GitHub account.
+
+Issues are public, so please use email for privacy requests or sensitive information.
+
 ## Reporting a problem?
 
 Please include:

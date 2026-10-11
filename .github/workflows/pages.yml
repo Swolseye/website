@@ -18,7 +18,11 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-          bundler-cache: true
+      - name: Install dependencies for the runner platform
+        run: |
+          # Docker on Apple Silicon can produce an ARM-only lockfile.
+          bundle lock --add-platform x86_64-linux
+          bundle install --jobs 4 --retry 3
       - uses: actions/configure-pages@v5
         id: pages
       - name: Build

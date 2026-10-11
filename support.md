@@ -38,6 +38,10 @@ If the problem continues, contact us before deleting or reinstalling the app: re
 
 ## Still need a hand?
 
+[Create a support issue on GitHub](https://github.com/swolseye/website/issues/new?template=support.md) to ask a question or report a problem. You can also [browse existing issues](https://github.com/swolseye/website/issues) to see whether it has already been reported. A GitHub account is required to post.
+
+GitHub issues are public. For private questions or personal information, use email instead.
+
 [Email Swolseye support](mailto:{{ site.support_email }}) at **{{ site.support_email }}**. Include your iPhone model, iOS version, app version from Settings, and the steps that led to the problem. Screenshots can help; remove anything you don't want to share.
 
 You may also find your answer in the [frequently asked questions]({{ '/faq/' | relative_url }}).

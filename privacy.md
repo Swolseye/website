@@ -30,6 +30,10 @@ This site is hosted on GitHub Pages. We do not add analytics, advertising, track
 
 Following an external link takes you to a service with its own privacy practices.
 
+## GitHub support issues
+
+You can optionally request support through GitHub Issues. Your GitHub username, issue content, comments and attachments are public. Do not post personal or sensitive information; use email for private requests. GitHub handles account and service data under its privacy statement linked above.
+
 ## Support emails
 
 If you email us, we receive your email address and whatever information or attachments you provide. We use this information to respond to your request and investigate reported problems. Correspondence is handled through Outlook, provided by Microsoft; see [Microsoft's privacy statement](https://privacy.microsoft.com/privacystatement).
