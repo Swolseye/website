@@ -32,7 +32,7 @@ Read-only sources: ../application/README.md and ../application/Swolseye/Resource
 
 ## Open Decisions
 
-Support contact confirmed: swolseye@outlook.com. The actual App Store URL and custom domain remain unset. The user requested a prominent App Store button with a # placeholder, real framed screenshots in place of the illustration, and a compact feature section. Preserve automatic system appearance.
+Support contact confirmed: swolseye@outlook.com. App Store ID: 6821699469. Use https://apps.apple.com/app/id6821699469; the app is not live yet. The custom domain remains unset. The user requested a prominent App Store button, real framed screenshots in place of the illustration, and a compact feature section. Preserve automatic system appearance.
 
 ## Product Principles
 

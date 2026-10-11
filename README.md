@@ -55,7 +55,7 @@ Once deployed, use these URLs in App Store Connect:
 
 Contact and FAQ are linked from the site. Apple also requires an accessible privacy-policy link inside the app; adding that is outside this repository's scope and has not been done here.
 
-The prominent App Store button uses `app_store_url` in `_config.yml`, currently `"#"` as requested. Replace it with the real App Store listing URL when available.
+The prominent App Store button uses `app_store_url` in `_config.yml`: `https://apps.apple.com/app/id6821699469`. The user supplied the ID before the app went live; the link is ready for release.
 
 Before submission, verify the live pages and email link and have the publisher confirm the privacy policy reflects the released app and support handling, including any applicable retention or legal disclosure requirements. This website cannot establish App Review approval.
 

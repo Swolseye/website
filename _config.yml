@@ -4,7 +4,7 @@ url: https://swolseye.github.io
 baseurl: /website
 lang: en
 support_email: swolseye@outlook.com
-app_store_url: "#"
+app_store_url: "https://apps.apple.com/app/id6821699469"
 markdown: kramdown
 permalink: pretty
 exclude:
